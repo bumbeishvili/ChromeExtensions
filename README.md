@@ -1,2 +1,2 @@
 # ChromeExtensions
-Repo Contains Chrome Extensions(writte by me) Sources
+Repo Contains Chrome Extensions(written by me) Sources
