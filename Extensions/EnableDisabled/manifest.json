@@ -1,7 +1,8 @@
 {
-  "manifest_version": 2,
-  "name": "My Cool Extension",
+  "manifest_version":2,
+  "name": "Enable all disabled button and input",
   "version": "0.1",
+  "description": "extension enables disabled html elements, buttons,texareas, inputs and etc.",
   "content_scripts": [
     {
       "matches": [
