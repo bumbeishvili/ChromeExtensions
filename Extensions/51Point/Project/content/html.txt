@@ -1,0 +1,206 @@
+﻿<!-- Top Panel  -->
+
+<div class="col-md-12">
+    <button class="btn btn-info" id="btnIntoDream" type="button" style=''> გადაეშვი ოცნებებში
+      <span class="glyphicon glyphicon-education"></span>
+    </button>
+    
+    <button class="btn btn-info" id="btnHotLinks" type="button"> საჭირო ლინკები
+      <span class="glyphicon glyphicon-new-window"></span>
+    </button>
+    
+    <button class="btn btn-info" id="btnHotContacts" type="button"> საჭირო ნომრები
+      <span class="glyphicon glyphicon-phone-alt"></span>
+    </button>
+    
+    <button class="btn btn-info" id="btnOtherNews" type="button"> სხვადასხვა
+      <span class="glyphicon glyphicon-align-justify"></span>
+    </button>
+    
+    <button class="btn btn-info" id="btnContactDeveloper"
+              type="button">გაქვთ კარგი იდეა?
+         <span class="glyphicon glyphicon-bell"></span>
+    </button>
+    
+    <button class="btn btn-info" id="btnVacancies" type="button"> წერტილოვანი ვაკანსია
+      <span class="badge" id='vacancyBadge'>0</span>
+    </button>
+</div>
+
+<div class="col-sm-12" style="margin-top:3%">    
+        <div class="alert alert-info" style="padding:10px;" role="alert" id="forStatements" >  	  
+ 		</div>
+</div>
+
+
+
+<div class="col-md-12">
+    
+    
+    <!-- Gpa Planner  -->
+    
+    <div class="col-sm-5" id="container">
+        <table class="table table-striped table-bordered" id="GpaTable">
+            <tr>
+                <th colspan="3" style="text-align:center;font-size:xx-large">
+                GPA=<span id="GpaResult"></span></th>
+            </tr>
+
+            <tr>
+                <th >კრედიტების რაოდენობა  &nbsp &nbsp► </th>
+
+                <td colspan="2" ><input class="form-control GpaInput" id="credits" max="275"
+                min="0" step="5" type="number"></td>
+            </tr>
+
+            <tr>
+                <th>შეფასების სახელი</th>
+
+                <th><span style="margin-left:10px">შეფასებათა
+                რაოდენობა</span></th>
+
+                <th>ათკრედიტიანთა რაოდენობა მათ შორის</th>
+            </tr>
+
+            <tr>
+                <td>B შეფასებების რაოდენობა</td>
+
+                <td><input class="col-sm-2 GpaInput form-control" id="B" max=
+                "60" min="0" style="margin-left: 10px;width:100px;" type=
+                "number"></td>
+
+                <td><input class="col-sm-3 GpaInput form-control" id="B10" max=
+                "30" min="0" placeholder="10 კრედიტიანია" style="width:100px;"
+                type="number"></td>
+            </tr>
+
+            <tr>
+                <td>C შეფასებების რაოდენობა</td>
+
+                <td><input class=" form-control col-sm-2 GpaInput" id="C" max=
+                "60" min="0" style="margin-left: 10px;width:100px;" type=
+                "number"></td>
+
+                <td><input class="col-sm-3 GpaInput form-control" id="C10" max=
+                "30" min="0" placeholder="10 კრედიტიანია" style="width:100px;"
+                type="number"></td>
+            </tr>
+
+            <tr>
+                <td>D შეფასებების რაოდენობა</td>
+
+                <td><input class="form-control col-sm-2 GpaInput" id="D" max=
+                "60" min="0" style="margin-left: 10px;width:100px" type=
+                "number"></td>
+
+                <td><input class="col-sm-3 GpaInput form-control" id="D10" max=
+                "30" min="0" placeholder="10 კრედიტიანია" style="width:100px;"
+                type="number"></td>
+            </tr>
+
+            <tr>
+                <td>E შეფასებების რაოდენობა</td>
+
+                <td><input class="form-control col-sm-2 GpaInput" id="E" max=
+                "60" min="0" style="margin-left:10px;width:100px;" type=
+                "number"></td>
+
+                <td><input class="col-sm-3 GpaInput form-control" id="E10" max=
+                "30" min="0" placeholder="10 კრედიტიანია" style="width:100px;"
+                type="number"></td>
+            </tr>
+            
+        </table><input class="btn btn-info" id="gpaPlannerInfo" style=
+        "float:left" type="button" value="Info">
+    </div>
+
+    <div class="row col-md-5"  style="margin-left:10%;">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th colspan="2" style="text-align:center;font-size:xx-large">
+                Total Statistics</th>
+            </tr>
+
+            <tr>
+                <th>მიმდინარე კრედიტები</th>
+
+                <td>
+                    <div id="currentCredits" style=
+                    "color:red;font-weight:bold"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>მიმდინარე GPA</th>
+
+                <td>
+                    <div id="currentGpa" style="color:red;font-weight:bold">
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>მთლიანი საშუალო შეწონილი ქულა</th>
+
+                <td>
+                    <div id="currentAveragePoints"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>ასქულამიღებული საგნები</th>
+
+                <td>
+                    <div id="hunderedPoints"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <th>GPA საერთაშორისო სტანდარტით<br>
+                (A+,A- და ა.შ.)</th>
+
+                <td>
+                    <div id="InternationalGpa"></div>
+                </td>
+            </tr>
+        </table><input class="btn btn-info" id="totalStatisticsInfo" style=
+        "float:left" type="button" value="Info">
+    </div>
+
+</div>
+
+<div class="col-sm-12" style="margin-top:3%"> 	
+        <div class="alert alert-info" style="padding:10px;" role="alert" id="forStatements" >
+ 		</div>
+</div>
+
+<div class="col-md-12" style="width:100%">
+    <input class="btn btn-info" id="chartInfo" style="float:left" type="button"
+    value="Info">
+</div>
+
+<div class="chartContainer col-md-6" style="width:45%;">
+    <canvas height="20%" id="canvas" width="35%"></canvas>
+</div>
+
+<!-- Average Statisics   -->
+<div class="row col-sm-6 " style='margin-left:5%' id="resultContainer">
+        <table class="table table-striped table-bordered" id=
+        "averagePointsTable">
+            <tr>
+                <th>სემესტრი</th>
+
+                <th>საშუალო ქულა</th>
+
+                <th>შეფასებები</th>
+
+                <th>GPA</th>
+            </tr>
+        </table><input class="btn btn-info" id="averagePointsInfo" style=
+        "float:left" type="button" value="Info">
+</div>
+
+<div class="col-sm-12" style="margin-top:3%">     
+        <div class="alert alert-info" style="padding:10px;" role="alert" id="forStatements" >
+ 		</div>
+</div>

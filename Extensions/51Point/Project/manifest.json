@@ -1,0 +1,52 @@
+{
+    "name": " 51 ქულა ",
+    "description": "უფრო მეტი, ვიდრე უბრალოდ ექსთენშენი",
+    "version": "1.0.92",
+	
+    "browser_action": {
+        "default_icon": "images/icon.png"
+    },
+	"icons": { "16": "images/icon16.png",
+				"48": "images/icon48.png",
+				"128": "images/icon128.png" },
+	
+	"permissions": [
+			  "tabs", "http://sms.tsu.ge/sms*",
+			  "storage" 
+	],
+
+    "content_scripts": [
+        {
+        "matches": 
+				[
+				"http://sms.tsu.ge/sms/Students/StudBarati*",
+				"http://sms.tsu.ge/sms/Students/StudAnk*"
+				],
+        "js": 
+				[ 
+				"modules/chart/Chart.js",
+				"modules/sweetAlert/sweetalert.min.js",
+				"modules/jquery/jquery-1.11.3.min.js",
+				"SmsTsuExtScript.js",
+				"modules/grammar/GeoGrammar.js"
+				
+				],
+		"css":  
+				["modules/sweetAlert/sweetalert.css"
+				],
+        "run_at": "document_end"   
+        }
+    ], 
+	
+	"web_accessible_resources": [
+		"modules/chart/Chart.js",
+		"modules/sweetAlert/sweetalert.min.js",
+		"content/html.txt",
+		"styles/extStyle.css",
+		"scripts/ExtensionContentScript.js"
+	],
+	
+	 
+	 "manifest_version": 2,
+	 "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}
