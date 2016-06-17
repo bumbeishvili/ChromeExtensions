@@ -1,14 +1,17 @@
-# SmsTsuExtender
+## [51 Point](https://chrome.google.com/webstore/detail/extend-smstsu/jjekhfcnahkgpnjkfofmleljdlgpaplc?authuser=1)
 
-ექსთენშენი უმატებს სხვადასხვა ფუნქციონალს sms.tsu.ge ვებ გვერდს. </br>
-სასწავლო ბარათის ფეიჯზე შესვლისას, გამოჩნდება: </br>
-• GPA Simulator - შეგიძლიათ ნახოთ სხვადასხვა კრედიტებისა და შეფასებების                    
-                შემთხვევაში როგორი იქნება თქვენი GPA </br>
-• Total Statistics - ნახავთ, მიმდინარე GPA-ს და კრედიტებს,მთლიან 
-                 საშუალო ქულას, ასქულიანი საგნების რაოდენობას   და სტანდარტულ GPA-ს</br>
-• სემესტრების სტატისტიკები: საშუალო ქულა და შეფასებები <br>
-• GPA-ს პროგრესის გრაფიკს
+Extension extends sms.tsu.ge web app with folowing features:  
+* GPA Simulator 
+* Total Statistics 
+* Semester Statistics
+* GPA Progress Chart
 
-სხვადასხვა საჭირო ინფორმაციებს
+# Screenshots
+### Dream mode  
+![](https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Extensions/51Point/Scr/dream.png)  
 
-<a href="https://chrome.google.com/webstore/detail/extend-smstsu/jjekhfcnahkgpnjkfofmleljdlgpaplc?authuser=1" target="_blank"> გადმოწერეთ ვებ  მარკეტიდან</a>
+### Gpa Simulator and Total Statistics
+![](https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Extensions/51Point/Scr/calcStat.png)  
+
+### Chart And semester Average
+![](https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/Extensions/51Point/Scr/chartTabl.png)
