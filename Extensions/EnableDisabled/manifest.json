@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Enable all disabled buttons and inputs",
   "version": "0.2",
-  "description": "extension enables disabled html elements, buttons,texareas, inputs and etc.  test it here https://s.codepen.io/bumbeishvili/debug/BzzYom",
+  "description": "extension enables disabled html elements, buttons,texareas, inputs and etc.  test it  https://s.codepen.io/bumbeishvili/debug/BzzYom",
   "content_scripts": [
     {
       "matches": [
