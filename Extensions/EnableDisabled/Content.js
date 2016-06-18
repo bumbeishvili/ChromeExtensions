@@ -20,12 +20,8 @@ element.style.opacity = '0';
 element.onclick = function () {
   var selectors = ['button', 'input', 'textarea', 'select', 'li', 'a', 'fieldset', 'div', 'img'];
   selectors.forEach(function (selector) {
-    var elems = document.getElementsByTagName(selector);
-    elems.forEach(function (el) {
-      el.disabled = false;
-      el.classList.remove("disabled");
-      el.readOnly = false;
-    });
+    var elems =  Array.prototype.slice.call(document.getElementsByTagName(selector));
+    elems.forEach(enable);
   });
 };
 
@@ -40,3 +36,8 @@ element.onmouseout = function (btn) {
 
 document.body.insertBefore(element, document.body.firstChild);
 
+function enable(el) {
+  el.disabled = false;
+  el.classList.remove("disabled");
+  el.readOnly = false;
+}
