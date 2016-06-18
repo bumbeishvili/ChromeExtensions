@@ -4,7 +4,7 @@
 |Name|Web Store Link| Github Link|
 |---------|----------|----|
 |51 Point| [chrome][chrome51] | [github][gh51]|
-|Enable Disabled Elements| [chrome][chrome51] | [github][gh51]|
+|Enable Disabled Elements| [chrome][chromeenable] | [github][gh51]|
 
 [gh51]:https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/51Point
 [ghenable]:https://github.com/bumbeishvili/ChromeExtensions/tree/master/Extensions/EnableDisabled
