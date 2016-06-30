@@ -1,4 +1,4 @@
-## Extension Sources which I have created
+## Chrome extensions
 
 
 |Name|Web Store Link| Github Link|
