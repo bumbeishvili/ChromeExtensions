@@ -16,6 +16,7 @@ element.style.borderRradius = '4px';
 element.style.padding = '3px';
 element.style.cursor = 'pointer';
 element.style.opacity = '0';
+element.style.maxWidth = '100px';
 
 element.onclick = function () {
   var selectors = ['button', 'input', 'textarea', 'select', 'li', 'a', 'fieldset', 'div', 'img'];
